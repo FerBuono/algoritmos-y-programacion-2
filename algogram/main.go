@@ -1,8 +1,9 @@
 package main
 
 import (
-	"algogram/app"
-	"algogram/errores"
+	"algogram/errors"
+	models "algogram/libs/models"
+	utils "algogram/libs/utils"
 	"fmt"
 	"os"
 )
@@ -11,15 +12,15 @@ func main() {
 	var newError error
 	var args = os.Args[1:]
 	if len(args) != 1 {
-		newError = new(errores.ErrorParametros)
+		newError = new(errors.ErrorParametros)
 		fmt.Fprintln(os.Stdout, newError.Error())
 		os.Exit(0)
 	}
 
-	listaUsuarios := guardarUsuarios(abrirArchivo(args[0]))
-	listaPosts := app.CrearListaDePosts()
+	userList := utils.SaveUsers(utils.OpenFile(args[0]))
+	postList := models.CreatePostList()
 
-	var usuarioLoggeado app.Usuario
+	var loggedInUser models.User
 
-	App(usuarioLoggeado, listaUsuarios, listaPosts)
+	utils.App(loggedInUser, userList, postList)
 }

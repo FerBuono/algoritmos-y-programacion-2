@@ -1,4 +1,4 @@
-module algogram
+module rerepolez
 
 go 1.18
 
