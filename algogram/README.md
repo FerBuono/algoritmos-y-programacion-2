@@ -1,4 +1,4 @@
-# TP2 Algogram
+# TP2 Algogram Social Media
 
 ## Overview
 Algogram is a social media simulation application implemented in **Go**. It allows users to create and manage posts and users, simulating a basic social media platform. 
