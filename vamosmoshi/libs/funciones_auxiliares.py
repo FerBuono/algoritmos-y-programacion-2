@@ -1,4 +1,4 @@
-from grafo import Grafo
+from vamosmoshi.libs.grafo import Grafo
 
 def ver_sedes(archivo_sedes):
     sedes = {}

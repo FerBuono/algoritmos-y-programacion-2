@@ -1,6 +1,6 @@
-from grafo import Grafo
-from funciones_grafos import dijkstra_minimos, bfs, orden_topologico, ciclo_euleriano, arbol_tendido_minimo_prim
-from funciones_auxiliares import escribir_kml, escribir_pj
+from vamosmoshi.libs.grafo import Grafo
+from vamosmoshi.libs.funciones_grafos import dijkstra_minimos, bfs, orden_topologico, ciclo_euleriano, arbol_tendido_minimo_prim
+from vamosmoshi.libs.funciones_auxiliares import escribir_kml, escribir_pj
 
 def ir(entrada, grafo, sedes):
     origen = entrada[1]

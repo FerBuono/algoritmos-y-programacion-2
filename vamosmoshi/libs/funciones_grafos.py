@@ -1,5 +1,5 @@
 import sys
-from grafo import Grafo
+from vamosmoshi.libs.grafo import Grafo
 import heapq
 from collections import deque
 

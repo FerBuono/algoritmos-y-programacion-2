@@ -1,9 +1,9 @@
-from grafo import Grafo
+from vamosmoshi.libs.grafo import Grafo
 import heapq
 from collections import deque
-from funciones_grafos import hierholzer
-from funciones_grafos import fleury
-from funciones_grafos import arbol_tendido_minimo_prim
+from vamosmoshi.libs.funciones_grafos import hierholzer
+from vamosmoshi.libs.funciones_grafos import fleury
+from vamosmoshi.libs.funciones_grafos import arbol_tendido_minimo_prim
 
 
 ##      PARA HIERHOLZER
